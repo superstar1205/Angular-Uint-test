@@ -1,0 +1,19 @@
+.breadcrumb{
+    background-color: transparent;
+    padding-left: 0;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #0057C2;
+}
+ol.breadcrumb li:first-child{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+ol.breadcrumb li:first-child a{
+    font-family: 'monserrat-bold';
+}
+@media only screen and (max-width: 900px) {
+    .breadcrumb{
+        display: none;
+    }
+}

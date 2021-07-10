@@ -1,0 +1,22 @@
+.applications_page .applications{
+    margin-top: 35px;
+}
+.applications_page .apps_list{
+    padding: 0 24px;
+}
+.applications_page h1{
+    font-size: 34px;
+    font-weight: 600;
+}
+.applications_page p{
+    font-size: 18px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 575px) {
+    .applications_page h1 {
+        font-size: 24px;
+    }
+    .applications_page p{
+        font-size: 12px;
+    }
+}

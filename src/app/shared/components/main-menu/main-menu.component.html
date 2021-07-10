@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-default main-menu">
+    <div class="container sura_container">
+        <a class="navbar-brand" [routerLink]="['./']">
+            <img src="assets/images/sura-logo-home.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+            
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="d-flex">
+                    <div *ngIf="notify" class="notify d-flex justify-content-center mr-2 pt-2" (click)="ShowNotifications()" >    
+                        <img src="assets/images/notify.png" alt="user" width="21" height="21">
+                        <div *ngIf="ShowListNotifications" class="notifications">
+                            <div class="list-notifications">
+                                <ul>
+                                    <li *ngFor="let itemNotification of dataNotifications">
+                                        <div class="item-notification d-flex">
+                                            <img class="mr-3" src="../../../../assets/images/notify_list.png" width="37" height="37" alt="Icon Notify" />
+                                            <div class="data-notify">
+                                                <p class="Wd100 TaLeft ClLightBlue"> {{itemNotification?.title}} </p>
+                                                <p class="Wd100 TaLeft ClBlue"> {{itemNotification?.time}} </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user pr-3">
+                        <p class="Wd100 TaRight ClLightBlue userName">{{user?.name}}</p>
+                        <p class="Wd100 TaRight ClBlue userCode">{{user?.code}}</p>
+                    </div>
+                    <div class="icon BgBlue d-flex justify-content-center mr-3">
+                        <img src="assets/images/user.png" alt="user" width="24" height="24">
+                    </div>
+                    <div class="action">
+                        <button class="btn BgYellow ClBlue" (click)="logout()">Salir</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>

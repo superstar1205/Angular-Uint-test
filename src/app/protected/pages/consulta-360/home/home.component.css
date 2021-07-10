@@ -1,0 +1,13 @@
+.home_page p{
+    font-family: 'monserrat-bold';
+}
+.home_page a{
+    font-family: 'monserrat-bold';
+    font-size: 14px;
+    padding: 13px;
+    padding-left: 50px;
+    background-image: url('../../../../../assets/images/search.png');
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+}

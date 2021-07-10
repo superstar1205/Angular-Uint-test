@@ -1,0 +1,47 @@
+<!-- <div class="col-xs-12 col-md-6 col-lg-7 col-xl-8"></div>
+<div class="col-xs-12 col-md-6 col-lg-5 col-xl-4"></div> -->
+<title>Login</title>
+<div class="page LoginPage">
+    <app-load-messages [text]="status" *ngIf="ShowLoading"></app-load-messages>
+    <div rowHeight="100%" class="ct-login">
+        <div class="bg-login">
+            <figure></figure>
+        </div>
+        <div class="justify-content-center BgWhiteTransparent5 form-container">
+            <app-logo></app-logo>
+            <div class="login-form">
+                <h2 class="Wd100 TaCenter ClBlue">Iniciar Sesión</h2>
+                <form (submit)="SubmitLoginForm()" [formGroup]="loginForm" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                class="form_control user-control" 
+                                [class]="isValidField('username')"
+                                placeholder="Usuario" 
+                                required 
+                                name="username" 
+                                id="username"
+                                formControlName="username"
+                                />
+                        </div>
+                        <div class="form-group">
+                            <input 
+                                type="password" 
+                                class="form_control password-control"
+                                [class]="isValidField('password')"
+                                placeholder="Contraseña" 
+                                required
+                                name="password"
+                                id="password"
+                                formControlName="password"
+                                />
+                        </div>
+                    </div>
+                    <!-- <button type="submit" class="btn BgYellow ClBlue" [disabled]="!loginForm.valid" >Ingresar con office 365</button> -->
+                    <button type="submit" class="btn BgYellow ClBlue">Ingresar con office 365</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

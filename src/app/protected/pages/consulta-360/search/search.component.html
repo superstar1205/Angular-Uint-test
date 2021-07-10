@@ -1,0 +1,113 @@
+<div class="page search_page">
+    <app-load-messages [text]="status" *ngIf="ShowLoading"></app-load-messages>
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="page_content BgWhite p-4 Mhght350 Bradius10">
+        <p class="ClBlue">Ingrese el tipo y número de documento del afiliado con el que quieres trabajar</p>
+        <form class="form-inline" (submit)="SubmitDocumentSearchForm()" [formGroup]="documentSearchForm">
+            <div class="form-group">
+                <select 
+                    formControlName="LsDocument" 
+                    name="LsDocument" 
+                    id="LsDocument" 
+                    class="form_control form-control ClGray" 
+                    [class]="isValidField('LsDocument',0)"
+                    (change)="OnChangeDoc($event.target.value)"
+                >
+                    <option value="">Seleccionar</option>
+                    <option value="DNI">DNI</option>
+                    <option value="LE">LE</option>
+                    <option value="CE">CE</option>
+                    <option value="PAS">PAS</option>
+                    <option value="CMP">CMP</option>
+                    <option value="LAT">LAT</option>
+                    <option value="PTP">PTP</option>
+                    <option value="CRE">CRE</option>
+                    <option value="CIE">CIE</option>
+                    <option value="CSR">CSR</option>
+                </select>
+                <div class="invalid-feedback">
+                    <span *ngIf="documentSearchForm.get('LsDocument').errors?.required"> Seleccione un documento </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input 
+                    formControlName="document" 
+                    name="document" 
+                    id="document" 
+                    type="text" 
+                    class="form_control form-control ClGray" 
+                    [class]="isValidField('document',0)" 
+                    placeholder="Num. de documento"
+                    [maxlength]="maxlength"
+                    [pattern]="pattern"
+                >
+                <div class="invalid-feedback">
+                    <span *ngIf="documentSearchForm.get('document').errors?.required"> Ingrese su documento </span>
+                </div>
+            </div>
+            <button class="btn BgYellow ClBlue">Buscar</button>
+        </form>
+
+        <p class="ClBlue">Ó búscalo por alguno de sus datos (Primer Nombre y Apellido Paterno son obligatorios)</p>
+        <form class="form-inline" (submit)="SubmitApenomSearchForm()" [formGroup]="apeNomSearchForm">
+            <div class="d-flex Wd100 mb-4">
+                <div class="form-group">
+                    <input 
+                        formControlName="FirstName" 
+                        name="FirstName" 
+                        id="FirstName" 
+                        type="text" 
+                        class="form_control form-control ClGray" 
+                        [class]="isValidField('FirstName',1)" 
+                        placeholder="Primer Nombre"
+                    ><span class="required">*</span>
+                    <div class="invalid-feedback">
+                        <span *ngIf="apeNomSearchForm.get('FirstName').errors?.required"> Ingrese su Nombre </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input 
+                        formControlName="SecondName" 
+                        name="SecondName" 
+                        id="SecondName" 
+                        type="text" 
+                        class="form_control form-control ClGray" 
+                        [class]="isValidField('SecondName',1)" 
+                        placeholder="Segundo Nombre"
+                    >
+                </div>
+            </div>
+            <div class="d-flex Wd100">
+                <div class="form-group">
+                    <input 
+                        formControlName="ApePat" 
+                        name="ApePat" 
+                        id="ApePat" 
+                        type="text" 
+                        class="form_control form-control ClGray" 
+                        [class]="isValidField('ApePat',1)" 
+                        placeholder="Apellido Paterno"
+                    ><span class="required">*</span>
+                    <div class="invalid-feedback">
+                        <span *ngIf="apeNomSearchForm.get('ApePat').errors?.required"> Ingrese su Apellido Paterno </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input 
+                        formControlName="ApeMat" 
+                        name="ApeMat" 
+                        id="ApeMat" 
+                        type="text" 
+                        class="form_control form-control ClGray" 
+                        [class]="isValidField('ApeMat',1)" 
+                        placeholder="Apellido Materno"
+                    ><span class="required">*</span>
+                    <div class="invalid-feedback">
+                        <span *ngIf="apeNomSearchForm.get('ApeMat').errors?.required"> Ingrese su Apellido Materno </span>
+                    </div>
+                </div>
+                <button class="btn BgYellow ClBlue">Buscar</button>
+            </div>
+        </form>
+    </div>
+</div>

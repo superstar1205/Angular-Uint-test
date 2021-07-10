@@ -1,0 +1,35 @@
+.main_dashboard{
+    height: 100%;
+    background-color: #EFF1F4;
+}
+.main_dashboard .section-main{
+    display: flex;
+    position: relative;
+    min-height: calc(100% - 70px);
+    height: 100%;
+}
+
+.main_dashboard .section-main .sidebar-container{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+}
+
+.main_dashboard .section-main .children-container{
+    width: 100%;
+    padding: 15px 30px;
+    padding-left: 340px;
+}
+@media only screen and (max-width: 900px) {
+    .main_dashboard{
+        height: 100%;
+        min-height: 100%;
+    }
+    .main_dashboard .section-main .sidebar-container{
+        width: auto;
+    }
+    .main_dashboard .section-main .children-container{
+        padding-left: 0;
+        padding: 15px;
+    }
+}

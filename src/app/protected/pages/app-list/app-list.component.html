@@ -1,0 +1,12 @@
+<div class="page applications_page">
+    <app-main-menu [notify]="false"></app-main-menu>
+    <div class="container">
+        <div class="apps_list">
+            <h1 class="Wd100 TaCenter mt-4">Bienvenido(a) {{user.name}} </h1>
+            <p class="Wd100 TaCenter mb-6">Por favor, selecciona una aplicación</p>
+            <div class="applications pt-6">
+                <app-applications [apps]="apps"></app-applications>
+            </div>
+        </div>
+    </div>
+</div>

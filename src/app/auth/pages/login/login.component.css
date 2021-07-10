@@ -1,0 +1,88 @@
+.LoginPage{
+    font-family: 'monserrat-regular';
+    height: 100%;
+}
+.LoginPage .row{
+    height: 100%;
+}
+.LoginPage .bg-login{
+    width: 100%;
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: hidden;
+    background-image: url('../../../../assets/images/bg-login.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.LoginPage .login-form{
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+.LoginPage h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.LoginPage input{
+    margin-bottom: 2px;
+    border-radius: 2px !important;
+}
+.user-control{
+    background-image: url('../../../../assets/images/user_login.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}
+.password-control{
+    background-image: url('../../../../assets/images/eye_login.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}
+.LoginPage button{
+    font-weight: 800;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: .375rem .95rem !important;
+}
+.LoginPage .form-group{
+    width: 100%;
+}
+.ct-login{
+    display: flex;
+    height: 100%;
+}
+.bg-login{
+    width: 60%;
+}
+.form-container{
+    width: 40%;
+}
+@media screen and (max-width: 992px) {
+    .bg-login,.form-container{
+        width: 50% !important;
+    }
+    .form-container{
+        left: 0 !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form-container{
+        position: absolute;
+        height: 100%;
+        width: 100% !important;
+        left: 0 !important;
+    }
+    .LoginPage .bg-login{
+        background-image: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    
+}

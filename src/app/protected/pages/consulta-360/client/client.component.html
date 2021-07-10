@@ -1,0 +1,34 @@
+<div class="page client_page">
+    <app-head-client-data></app-head-client-data>
+    <app-load-messages [text]="status" *ngIf="ShowLoading"></app-load-messages>
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="content_client_page">
+        <div class="item buttons_client BgWhite p-4 Mhght350 Bradius10">
+            <p class="ClBlue FFMSB">¿Que desea hacer?</p>
+            <!-- <a routerLink="./issue-document" queryParams="{ d:'afiliate-certificate', t:'Emitir Constancia de Afiliado' }" class="btn BgBlue ClWhite FFMSB mb-3 BGFile" >Emitir Constancia de Afiliado</a>
+            <a routerLink="./issue-document" queryParams="{ d:'account-status', t:'Enviar Estado de Cuenta' }" class="btn BgBlue ClWhite FFMSB mb-3 BGFile">Enviar Estado de Cuenta</a>
+            <a routerLink="./issue-document" queryParams="{ d:'sbs-report', t:'Enviar Reporte SBS' }" class="btn BgBlue ClWhite FFMSB mb-3 BGFile">Enviar Reporte SBS</a>
+            <a routerLink="./issue-document" queryParams="{ d:'affiliate-information', t:'Datos del afiliado' }" class="btn BgBlue ClWhite FFMSB mb-3 mr-1 BGUser">Datos del afiliado</a>
+            <a routerLink="./issue-document" queryParams="{ d:'sbs-report', t:'Enviar Reporte SBS' }" class="btn BgBlue ClWhite FFMSB mb-3 BGFile">Consulta de Trámites</a> -->
+
+            <a routerLink="./affiliate-data" class="btn BgBlue ClWhite FFMSB mb-3 mr-1 BGUser">Datos del afiliado</a>
+            <button class="btn BgBlue ClWhite FFMSB mb-3 BGFile" (click)="GoToProcedureConsultant()">Consulta de Trámites</button>
+
+
+            <!-- <a routerLink="./consultation-procedure" class="btn BgBlue ClWhite FFMSB mb-3 BGFile">Consulta de Trámites</a> -->
+        </div>
+        <!-- <div class="item documents_client BgWhite p-4 Mhght350 Bradius10">
+            <p class="ClBlue FFMSB">Envío Masivo de Documentos</p>
+            <div class="list_option">
+                <div class="form-check" *ngFor="let document of documents" (click)="SelectCheck(document.id)" [class]="IsChecked(document.id)" >
+                    <div class="div_check Cpointer" id="flexCheckDefault"></div>
+                    <label class="form-check-label Cpointer" for="flexCheckDefault">
+                        <span class="FFMR">{{document.description}}</span> - <span class="FFMSB">{{document.size}}</span>
+                    </label>
+                </div>
+            </div>
+            <br>
+            <button class="btn btn-md BgYellow ClBlue FFMSB pl-4 pr-4" >Enviar</button>
+        </div> -->
+    </div>
+</div>

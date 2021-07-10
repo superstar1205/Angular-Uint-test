@@ -1,0 +1,10 @@
+.issue_document_page .preview{
+    margin: 40px auto;
+    width: 100%;
+    height: 330px;
+    display: block;
+}
+.issue_document_page .preview iframe{
+    width: 100%;
+    height: 100%;
+}

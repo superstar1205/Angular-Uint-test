@@ -1,0 +1,91 @@
+.sidebar{
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    background: linear-gradient(90deg, #014989 0%, #138FB9 95.77%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px 26px;
+    margin: 0;
+    overflow: auto;
+}
+.sidebar .close-mobile{
+    position: absolute;
+    display: none;
+}
+.menu-burguer-mobile{
+    position: absolute;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    border-radius: 0px 4px 4px 0px;
+    padding-top: 15.5px;
+    cursor: pointer;
+}
+.menu-burguer-mobile img{
+    display: block;
+    margin: auto;
+}
+.sidebar .box{
+    margin-bottom: 25px;
+}
+.sidebar .box h3{
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.sidebar .box ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.sidebar .box ul li{
+    list-style: none;
+    margin-bottom: 25px;
+    position: relative;
+}
+.sidebar .box ul li img{
+
+}
+.sidebar .box ul li span{
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 2px;
+}
+.sidebar .box ul li .arrow-img{
+    margin-left: 130px;
+}
+.sidebar .box ul li ul.submenu{
+    padding-left: 29px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.sidebar .box ul li ul.submenu li{
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        position: absolute;
+        z-index: 10;
+    }
+    .sidebar .close-mobile{
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        padding: 0 10px;
+        margin-left: 225px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+    .sidebar.show{
+        display: block;
+        width: 300px;
+    }
+    .sidebar.hidden{
+        display: none;
+    }
+    .menu-burguer-mobile{
+        display: block;
+    }
+}

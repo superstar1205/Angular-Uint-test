@@ -1,0 +1,17 @@
+{
+  "production": false,
+  "productName": "consulta",
+  "environment": "desarrollo",
+  "environmentName": "Desarrollo",
+  "coreServiceUrl": "https",
+  "xibmclientid":"0f36a90a",
+  "xibmclientsecret": "wM7f",
+  "azureAdTenantId": "a24df628",
+  "azureAdClientId": "78381b5f",
+  "azureAdRedirectUri": "https",
+  "ibmClientId": "5c3a844c",
+  "elkApmServer": "https",
+  "elkApmDistributedTracingOrigins": [],
+  "elkActive": true,
+  "elkInstrument": true
+}

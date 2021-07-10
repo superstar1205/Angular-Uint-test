@@ -1,0 +1,59 @@
+
+.ct_apps_list .bullets_carrousel{
+    width: 150px;
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.ct_apps_list .bullets_carrousel .bullet{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.ct_apps_list .bullets_carrousel .bullet.active{
+    border: 1px solid #c4c4c4;
+    background-color: #c4c4c4;
+}
+.ct_slider_apps{
+    width: 100%;
+    max-width: 100%;
+}
+.app_component{
+    display: flex;
+    justify-content: center;
+}
+.app_component .card{
+    border: none !important;
+    max-width: 33%;
+}
+.app_component .start-app a.btn{
+    font-weight: 800;
+    font-size: 14px;
+    padding: .375rem .95rem !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 575px) {
+    .ct_slider_apps{
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .app_component{
+        display: flex;
+        width: 300%;
+        justify-content: space-between;
+    }
+    .app_component .card {
+        min-width: 33.3333;
+    }
+    .app_component .card .card-text{
+        font-size: 12px;
+    }
+}

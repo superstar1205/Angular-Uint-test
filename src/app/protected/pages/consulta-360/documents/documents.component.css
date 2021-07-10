@@ -1,0 +1,42 @@
+.documents_page .content_document_page ul{
+    margin: 0;
+    padding: 0;
+}
+
+.documents_page .content_document_page ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    padding: 20px 15px;
+    border-bottom: 1px solid #E2E5E6;
+    cursor: pointer;
+}
+.documents_page .content_document_page ul li:hover{
+    background-color: #E2E5E6;
+    border-bottom: 1px solid #fff;
+}
+.documents_page .content_document_page ul li:last-child{
+    border-bottom: none;
+}
+.documents_page .content_document_page ul li img{
+    margin-right: 20px;
+}
+
+.documents_page .content_document_page ul li .text_data{
+    padding: 3px 5px;
+}
+
+.documents_page .content_document_page ul li .text_data p{
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.documents_page .content_document_page ul li .buttons{
+    display: block;
+    position: absolute;
+    right: 0;
+}
+.documents_page .content_document_page ul li .buttons button{
+    margin-left: 30px;
+}

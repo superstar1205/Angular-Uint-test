@@ -1,0 +1,38 @@
+.search_result_page *{
+    font-family: 'monserrat-semi-bold';
+}
+.search_result_page p{
+    margin: 15px auto 20px;
+
+}
+.search_result_page table thead{
+    border: 1px solid #0057c2;
+}
+.search_result_page table tbody{
+    border: 1px solid #E2E5E6;
+}
+.search_result_page table caption{
+    font-family: 'monserrat-regular';
+}
+.search_result_page table tbody tr{
+    cursor: pointer;
+}
+.search_result_page table tbody tr td{
+    font-family: 'monserrat-regular';
+}
+.search_result_page table tbody tr td span.circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.search_result_page table tbody tr td span.circle.circle_green{
+    border: 1px solid #64C255;
+    background-color: #64C255;
+}
+
+.search_result_page table tbody tr td span.circle.circle_red{
+    border: 1px solid #F34E4E;
+    background-color: #F34E4E;
+}

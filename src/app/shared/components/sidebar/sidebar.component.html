@@ -1,0 +1,48 @@
+<div class="menu-burguer-mobile BgBlue" (click)="OpenSidebar(true)">
+    <img src="../../../../assets/images/burguer.png" alt="Burgue Menu" width="16" height="11">
+</div>
+<div class="sidebar" [ngClass]="sidebarShow ? 'show' : 'hidden'">
+    <div class="close-mobile" (click)="OpenSidebar(false)">X</div>
+    <div class="box">
+        <h3 class="ClWhite">APPS</h3>
+        <ul>
+            <li>
+                <a class="ClWhite" routerLink="app-list">
+                    <img src="../../../../assets/images/apps-list.png" alt="App List">
+                    <span>Lista de Apps</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3 class="ClWhite">NAVEGACIÓN</h3>
+        <ul>
+            <li>
+                <!-- <a class="ClWhite" routerLink="consulta-360/search"> -->
+                <a class="ClWhite" href="dashboard/consulta-360/search">
+                    <img src="../../../../assets/images/search.png" alt="Búsqueda">
+                    <span>Búsqueda</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a class="ClWhite" routerLink="../dashboard/consulta-360/documents/all" queryParams="{t:'Todos' }">
+                    <img src="../../../../assets/images/documents.png" alt="Documentos">
+                    <span>Documentos</span>
+                    <img class="arrow-img" src="../../../../assets/images/arrow-bottom.png" alt="App List">
+                </a>
+                <ul class="submenu">
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/charged-documents" queryParams="{t:'Documentos cargados' }">Documentos cargados</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/funeral-expensess" queryParams="{t:'Gastos de Sepelio' }">Gastos de Sepelio</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/inheritance" queryParams="{t:'Herencia' }">Herencia</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/disability" queryParams="{t:'Invalidez' }">Invalidez</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/retirement" queryParams="{t:'Jubilación' }">Jubilación</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/survival" queryParams="{t:'Sobrevivencia' }">Sobrevivencia</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/terminal-illness" queryParams="{t:'Enfermedad Terminal o Cáncer' }">Enfermedad Terminal o Cáncer</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/founds-abroad" queryParams="{t:'Fondos al Exterior' }">Fondos al Exterior</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/retirement-another-regime" queryParams="{t:'Jubilación en otro Régimen' }">Jubilación en otro Régimen</a></li>
+                    <li><a class="ClWhite" routerLink="../dashboard/consulta-360/documents/agreements-peru-others-countries" queryParams="{t:'Convenios de Perú con otros Países' }">Convenios de Perú con otros Países</a></li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+</div>

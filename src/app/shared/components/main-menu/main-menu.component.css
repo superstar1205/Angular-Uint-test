@@ -1,0 +1,129 @@
+.notifications::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.notifications::-webkit-scrollbar:vertical {
+    width:10px;
+}
+.notifications::-webkit-scrollbar-button:increment,.notifications::-webkit-scrollbar-button {
+    display: none;
+} 
+.notifications::-webkit-scrollbar:horizontal {
+    width: 10px;
+}
+.notifications::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #0057C2;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+.notifications::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 10px;  
+}
+.notifications::-webkit-scrollbar-track:hover,
+.notifications::-webkit-scrollbar-track:active {
+  background: #e1e1e1;
+}
+
+
+.main-menu{
+    border-bottom: 1px solid #E2E5E6;
+    /* box-shadow: #E2E5E6 0px 2px 2px; */
+    background-color: #fff;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.main-menu.navbar{
+    padding: 4.5px 1rem;
+    height: 70px;
+}
+
+.main-menu .container,
+.main-menu .sura_container{
+    max-width: 90% !important;
+}
+
+.main-menu .notify{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-menu .notify .notifications{
+    z-index: 1;
+    margin-top: 35px;
+    margin-left: -260px;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+}
+
+.main-menu .notify .notifications ul{
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu .notify .notifications ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.main-menu .notify .notifications ul li:last-child{
+    border-bottom: none;
+}
+
+.main-menu .notify .notifications ul li .data-notify p{
+    margin-bottom: 2px;
+}
+
+.main-menu .notify .notifications p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main-menu .user .userName{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.main-menu .user .userCode{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.main-menu .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+.main-menu .action{
+    padding-top: 5px;
+}
+
+.main-menu .action button{
+    width: 110px;
+    font-weight: 800;
+    padding: .375rem .95rem !important;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-menu.navbar{
+        height: 140px;
+    }
+    #navbarColor01{
+        margin-top: 5px !important;
+    }
+}

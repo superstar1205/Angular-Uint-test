@@ -1,0 +1,21 @@
+<div class="page documents_page">
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="content_document_page BgWhite p-4 Mhght350 Bradius10">
+
+        <p class="ClBlue FFMSB">Documentos de {{textBeadcunb}} </p>
+
+        <ul>
+            <li *ngFor="let document of documents">
+                <img src="../../../../../assets/images/document.png" width="25" height="35" alt="">
+                <div class="text_data">
+                    <p class="ClBlue FFMSB description"> {{document.description}} </p>
+                    <p class="ClLightBlue FFMR">Peso {{document.size}} </p>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-xs BdBlue1 BgWhite ClBlue FFMSB">Enviar por Correo</button>
+                    <button class="btn btn-xs BgYellow ClBlue FFMSB mr-3">Imprimir</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

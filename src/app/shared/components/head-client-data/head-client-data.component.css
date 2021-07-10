@@ -1,0 +1,64 @@
+.head-client-data{
+    width: 100%;
+    padding: 30px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.head-client-data .client-data{
+    display: flex;
+    justify-content: space-between;
+}
+.head-client-data .client-data div p{
+    margin-bottom: 0;
+}
+.head-client-data .client-data div p.option{
+    font-family: 'monserrat-regular';
+    font-size: 14px;
+}
+.head-client-data .client-data div p.data{
+    font-family: 'monserrat-semi-bold';
+    font-size: 14px;
+}
+.BtnOther{
+    border: 1px solid #0057C2;
+}
+@media only screen and (max-width: 575px) {
+    .head-client-data{
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+    .head-client-data .client-data{
+        display: block;
+        position: relative;
+    }
+    .head-client-data .client-data .client-name,
+    .head-client-data .client-data .client-buttons{
+        width: 100%;
+    }
+    .head-client-data .client-data .client-dni,
+    .head-client-data .client-data .client-cussp{
+        width: 50%;
+        text-align: left;
+    }
+    .head-client-data .client-data .client-cussp{
+        position: absolute;
+        margin-top: -42px;
+        margin-left: 50%;
+        text-align: right;
+    }
+    .head-client-data .client-data .client-buttons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+    .head-client-data .client-data .client-buttons button{
+        font-size: 11px;
+        padding: 0.675rem 3px;
+        font-size: 11px;
+    }
+    .head-client-data .client-data .client-name{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

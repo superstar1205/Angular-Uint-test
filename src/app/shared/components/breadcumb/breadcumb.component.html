@@ -1,0 +1,10 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li *ngFor="let item of items" class="breadcrumb-item">
+            <span *ngIf="item.url===''; else elseTemplate" class="ClBlue">{{item.text}}</span>
+            <ng-template #elseTemplate>
+                <a class="ClBlue" routerLink={{item.url}}>{{item.text}}</a>
+            </ng-template>
+        </li>
+    </ol>
+</nav>

@@ -1,0 +1,112 @@
+<div class="page affiliate_data_page">
+    <app-head-client-data></app-head-client-data>
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="content_client_page">
+        <div class="item buttons_client BgWhite p-4 Mhght350 Bradius10">
+            <p class="ClBlue FFMSB">Datos Personales</p>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtDocument" class="FFMSB">Documento de identidad</label>
+                    <input type="text" id="txtDocument" disabled class="form_control" [(ngModel)]="affiliate.identificacionTipo + ' ' + affiliate.identificacionNumero" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtFirstName" class="FFMSB">Primer Nombre</label>
+                    <input type="text" id="txtFirstName" disabled class="form_control" [(ngModel)]="affiliate.nombrePrimero" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtSecondName" class="FFMSB">Segundo Nombre</label>
+                    <input type="text" id="txtSecondName" disabled class="form_control" [(ngModel)]="affiliate.nombreSegundo" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtApePat" class="FFMSB">Apellido Paterno</label>
+                    <input type="text" id="txtApePat" disabled class="form_control" [(ngModel)]="affiliate.apellidoPaterno" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtApeMat" class="FFMSB">Apellido Materno</label>
+                    <input type="text" id="txtApeMat" disabled class="form_control" [(ngModel)]="affiliate.apellidoMaterno" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtFecNac" class="FFMSB">Fecha de Nacimiento</label>
+                    <input type="text" id="txtFecNac" disabled class="form_control" [ngModel]="GetFecNac(affiliate.fechaNacimiento)" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtSex" class="FFMSB">Sexo</label>
+                    <input type="text" id="txtSex" disabled class="form_control" [(ngModel)]="affiliate.sexo" />
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="ClBlue FFMSB">Dirección de Correspondencia</p>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtDir" class="FFMSB">Dirección</label>
+                    <input type="text" id="txtDir" disabled class="form_control" [(ngModel)]="affiliate.direccionAvenida" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtNro" class="FFMSB">Número</label>
+                    <input type="text" id="txtNro" disabled class="form_control" [(ngModel)]="affiliate.direccionNumero" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtUrb" class="FFMSB">Urbanización</label>
+                    <input type="text" id="txtUrb" disabled class="form_control" [(ngModel)]="affiliate.direccionUrbanizacion" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtDepa" class="FFMSB">Departamento</label>
+                    <input type="text" id="txtDepa" disabled class="form_control" [(ngModel)]="affiliate.departamentoDescripcion" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtProv" class="FFMSB">Provincia</label>
+                    <input type="text" id="txtProv" disabled class="form_control" [(ngModel)]="affiliate.provinciaDescripcion" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtDist" class="FFMSB">Distrito</label>
+                    <input type="text" id="txtDist" disabled class="form_control" [(ngModel)]="affiliate.distritoDescripcion" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtRef" class="FFMSB">Referencia</label>
+                    <input type="text" id="txtRef" disabled class="form_control" [(ngModel)]="affiliate.direccionReferencia" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtPhone" class="FFMSB">Teléfono Domicilio</label>
+                    <input type="text" id="txtPhone" disabled class="form_control" [(ngModel)]="affiliate.telefonoResidencia" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtPhone2" class="FFMSB">Teléfono Oficina</label>
+                    <input type="text" id="txtPhone2" disabled class="form_control" [(ngModel)]="affiliate.telefonoOficina" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtCel" class="FFMSB">Teléfono Celular</label>
+                    <input type="text" id="txtCel" disabled class="form_control" [(ngModel)]="affiliate.celular" />
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtEmail" class="FFMSB">Correo Electrónico</label>
+                    <input type="text" id="txtEmail" disabled class="form_control" [(ngModel)]="affiliate.emailPrincipal" />
+                </div>
+                <div class="formgroup">
+                    <label for="txtEmail2" class="FFMSB">Correo Electrónico Alternativo</label>
+                    <input type="text" id="txtEmail2" disabled class="form_control" [(ngModel)]="affiliate.emailSecundario" />
+                </div>
+            </div>
+            <button class="btn BgYellow ClBlue FFMSB mt-4 pl-4 pr-4" (click)="Back()">Salir</button>
+        </div>
+    </div>
+</div>

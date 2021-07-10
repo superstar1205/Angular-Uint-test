@@ -1,0 +1,17 @@
+<div class="page issue_document_page">
+    <app-head-client-data></app-head-client-data>
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="content_issue_document_page BgWhite p-4 Mhght350 Bradius10">
+
+        <p class="ClBlue FFMSB">{{acttivatedRouter.snapshot.queryParamMap.get('t')}}</p>
+
+        <div class="preview">
+            <iframe src="../../../../../assets/documents/constancia_del_afiliado_16_04_2021.pdf" frameborder="0"></iframe>
+        </div>
+        
+        <div class="client-buttons">
+            <button class="btn btn-xs BgYellow ClBlue FFMSB mr-3">Imprimir</button>
+            <button class="btn btn-xs BdBlue1 BgWhite ClBlue FFMSB">Enviar por Correo</button>
+        </div>
+    </div>
+</div>

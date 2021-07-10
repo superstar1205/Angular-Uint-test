@@ -1,0 +1,3 @@
+.form_control{
+    height: calc(2.5em + .75rem + 2px);
+}

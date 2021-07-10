@@ -1,0 +1,19 @@
+.modal p{
+    font-family: 'monserrat-semi-bold';
+    text-align: center;
+    margin: 30px auto 40px;
+}
+.modal .botonera{
+    width: 100%;
+}
+.modal button{
+    width: 110px;
+    display: block;
+    margin: 0 auto;
+}
+.modal-content{
+    border-radius: 0;
+}
+.modal-dialog{
+    
+}

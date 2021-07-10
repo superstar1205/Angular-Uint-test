@@ -1,0 +1,20 @@
+<div class="head-client-data BgWhite">
+    <div class="client-data">
+        <div class="client-name">
+            <p class="option ClBlue">Afiliado Actual:</p>
+            <p class="data ClBlue">{{affiliate.nombrePrimero + ' ' + affiliate.nombreSegundo + ' ' + affiliate.apellidoPaterno + ' ' + affiliate.apellidoMaterno}}</p>
+        </div>
+        <div class="client-dni">
+            <p class="option ClBlue">DNI:</p>
+            <p class="data ClBlue">{{affiliate.identificacionNumero}}</p>
+        </div>
+        <div class="client-cussp">
+            <p class="option ClBlue">CUSSP:</p>
+            <p class="data ClBlue">{{affiliate.cuspp}}</p>
+        </div>
+        <div class="client-buttons">
+            <button class="btn btn-xs BgBlue ClWhite FFMSB mr-3">Guardar</button>
+            <button class="btn btn-xs BdBlue1 BgWhite ClBlue FFMSB BtnOther" (click)="GoToResults()">Seleccionar Otro</button>
+        </div>
+    </div>
+</div>

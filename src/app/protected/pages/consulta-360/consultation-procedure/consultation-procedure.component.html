@@ -1,0 +1,40 @@
+<div class="page consultation_procedure_page">
+    <app-head-client-data></app-head-client-data>
+    
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <app-load-messages [text]="status" *ngIf="ShowLoading"></app-load-messages>
+    <div class="content_client_page">
+        <div class="item buttons_client BgWhite p-4 Mhght350 Bradius10">
+            <p class="ClBlue FFMSB">Resultados</p>
+            <div class="table-responsive-sm">
+                <table class="table table-hover">
+                    <caption>Se encontró {{proceduresList.length}} {{proceduresList.length === 1?'Resultado':'Resultados'}} </caption>
+                    <thead>
+                        <tr class="BgBlue ClWhite">
+                            <th scope="col">N° de Solicitud</th>
+                            <th scope="col">N° de Solicitud Interna</th>
+                            <th scope="col">Tipo de Trámite</th>
+                            <th scope="col">Fecha Solicitud</th>
+                            <th scope="col">N° Armadas</th>
+                            <th scope="col">Armada Actual</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let procedure of proceduresList">
+                            <td class="ClGray" scope="row"> {{procedure.numeroTramite}} </td>
+                            <td class="ClGray" scope="row"> {{Cut(procedure.keyAfp)}} </td>
+                            <td class="ClGray"> {{procedure.tipoSolicitud}} </td>
+                            <td class="ClGray"> {{TransformFecha(procedure.fechaSolicitud)}} </td>
+                            <td class="ClGray"> {{procedure.totalArmada}} </td>
+                            <td class="ClGray"> {{procedure.armada}} </td>
+                            <td class="ClGray"> {{procedure.estadoSolicitud}} </td>
+                            <td class="ClGray"> <span class="FFMSB ClBlue Cpointer" (click)="ProcedureDetail(procedure.numeroTramite)">VER</span> </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>

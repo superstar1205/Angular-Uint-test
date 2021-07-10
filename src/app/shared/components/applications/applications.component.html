@@ -1,0 +1,21 @@
+<div class="ct_apps_list">
+    <div class="ct_slider_apps">
+        <div class="app_component card-deck" (window:resize)="onResize($event)" [ngStyle]="{'margin-left':'-'+carrouselMargin+'%'}">
+            <div class="card" *ngFor="let app of apps">
+                <img class="card-img-top" src="../../../../assets/images/apps_dummy/{{app?.image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> {{app?.title}} </h5>
+                    <p class="card-text">{{app?.description}}</p>
+                </div>
+                <div class="start-app">
+                    <a [routerLink]="[app?.to]" class="btn BgYellow ClBlue">Iniciar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bullets_carrousel" *ngIf="screenWidth <= 575">
+        <div class="bullet" *ngFor="let app of apps" [ngClass]="app.id === bulletActive ? 'active' : ''" (click)="clickBullet(app.id)">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+<div class="page procedure_detail[0]_page">
+    <app-head-client-data></app-head-client-data>
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="content_client_page">
+        <!-- <p> {{detail | json}} </p> -->
+        <div *ngIf="detail[0]"  class="item buttons_client BgWhite p-4 Mhght350 Bradius10">
+            <p class="ClBlue FFMSB">Datos de la solicitud</p>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtTipo" class="FFMSB">Tipo de Solicitud</label>
+                    <input type="text" id="txtTipo" disabled class="form_control" [(ngModel)]="detail[0].tipoSolicitud"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtNro" class="FFMSB">N° de Solicitud</label>
+                    <input type="text" id="txtNro" disabled class="form_control" [(ngModel)]="detail[0].numeroSolicitud"/>
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtFecha" class="FFMSB">Fecha de Solicitud</label>
+                    <input type="text" id="txtFecha" disabled class="form_control" [ngModel]="TransformFecha(detail[0].fechaSolicitud)"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtEstado" class="FFMSB">Estado de Solicitud</label>
+                    <input type="text" id="txtEstado" disabled class="form_control" [(ngModel)]="detail[0].estadoSolicitud"/>
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtSubEstado" class="FFMSB">Sub Estado</label>
+                    <input type="text" id="txtSubEstado" disabled class="form_control" [(ngModel)]="detail[0].subEstado"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtMotivoRechazo" class="FFMSB">Motivo Rechazo</label>
+                    <input type="text" id="txtMotivoRechazo" disabled class="form_control" [(ngModel)]="detail[0].motivoRechazo"/>
+                </div>
+            </div>
+            <!-- <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtMontoSolicitado" class="FFMSB">Monto Solicitado</label>
+                    <input type="text" id="txtMontoSolicitado" disabled class="form_control" [(ngModel)]="detail[0].montoSolicitado"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtMontoDisponible" class="FFMSB">Monto Disponible</label>
+                    <input type="text" id="txtMontoDisponible" disabled class="form_control" [(ngModel)]="detail[0].montoDisponible"/>
+                </div>
+            </div> -->
+
+            <hr>
+
+            <p class="ClBlue FFMSB">Datos de Pago</p>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtTipoPago" class="FFMSB">Tipo de Pago</label>
+                    <input type="text" id="txtTipoPago" disabled class="form_control" [(ngModel)]="detail[0].tipoPago"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtEntidad" class="FFMSB">Entidad Financiera</label>
+                    <input type="text" id="txtEntidad" disabled class="form_control" [(ngModel)]="detail[0].entidadFincaciera"/>
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtNcuenta" class="FFMSB">N° de Cuenta</label>
+                    <input type="text" id="txtNcuenta" disabled class="form_control" [ngModel]="detail[0].cuenta"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtTipoCuenta" class="FFMSB">Tipo de Cuenta</label>
+                    <input type="text" id="txtTipoCuenta" disabled class="form_control" [(ngModel)]="detail[0].tipoCuenta"/>
+                </div>
+            </div>
+            <div class="form-line">
+                <!-- <div class="formgroup">
+                    <label for="txtMontoPagado" class="FFMSB">Monto Pagado</label>
+                    <input type="text" id="txtMontoPagado" disabled class="form_control" [(ngModel)]="detail[0].montoPagado"/>
+                </div> -->
+                <div class="formgroup">
+                    <label for="txtArmada" class="FFMSB">Armada</label>
+                    <input type="text" id="txtArmada" disabled class="form_control" [(ngModel)]="detail[0].armada"/>
+                </div>
+                <div class="formgroup">
+                    <label for="txtFpago" class="FFMSB">Fecha de Pago</label>
+                    <input type="text" id="txtFpago" disabled class="form_control" [ngModel]="TransformFecha(detail[0].fechaPago)"/>
+                </div>
+            </div>
+            <!-- <div class="form-line">
+                <div class="formgroup">
+                    <label for="txtFpago" class="FFMSB">Fecha de Pago</label>
+                    <input type="text" id="txtFpago" disabled class="form_control" [ngModel]="TransformFecha(detail[0].fechaPago)"/>
+                </div>
+            </div> -->
+
+
+            <div *ngIf="detail[1]">
+                <hr>
+                <p class="ClBlue FFMSB">Otros Pagos</p>
+                <div class="form-line">
+                    <div class="formgroup">
+                        <label for="txtTipoPago2" class="FFMSB">Tipo de Pago</label>
+                        <input type="text" id="txtTipoPago2" disabled class="form_control" [(ngModel)]="detail[1].tipoPago"/>
+                    </div>
+                </div>
+                <div class="form-line">
+                    <div class="formgroup">
+                        <label for="txtArmada2" class="FFMSB">Armada</label>
+                        <input type="text" id="txtArmada2" disabled class="form_control" [(ngModel)]="detail[1].armada"/>
+                    </div>
+                    <div class="formgroup">
+                        <label for="txtFpago2" class="FFMSB">Fecha de Pago</label>
+                        <input type="text" id="txtFpago2" disabled class="form_control" [ngModel]="TransformFecha(detail[1].fechaPago)"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

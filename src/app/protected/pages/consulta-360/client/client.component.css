@@ -1,0 +1,98 @@
+.client_page .form-check-input {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0,0,0,.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+}
+.client_page{
+
+}
+.client_page .content_client_page{
+    display: flex;
+    justify-content: space-between;
+}
+.client_page .content_client_page .item{
+    /* width: 49%; */
+    width: 100%;
+}
+.client_page .content_client_page .buttons_client{
+
+}
+.client_page .content_client_page .buttons_client a.btn,
+.client_page .content_client_page .buttons_client button.btn{
+    width: 100%;
+    max-width: 382px;
+    box-sizing: border-box;
+    padding: .875rem 1.75rem .875rem 3.75rem ;
+    text-align: left;
+    /* display: block; */
+}
+.client_page .content_client_page .buttons_client a.btn.BGFile,
+.client_page .content_client_page .buttons_client button.btn.BGFile{
+    background-image: url('../../../../../assets/images/file.png');
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+}
+.client_page .content_client_page .buttons_client a.btn.BGUser,
+.client_page .content_client_page .buttons_client button.btn.BGUser{
+    background-image: url('../../../../../assets/images/user.png');
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+}
+.client_page .content_client_page .list_option .form-check{
+    display: flex;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+.client_page .content_client_page .list_option .form-check .div_check{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 1px solid #E2E5E6;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 2px;
+}
+.client_page .content_client_page .list_option .form-check.active .div_check{
+    border: 1px solid #00AEC7;
+    background-color: #00AEC7;
+}
+.client_page .content_client_page .list_option .form-check span{
+    color: #939393;
+}
+.client_page .content_client_page .list_option .form-check.active span{
+    color: #00AEC7;
+}
+.client_page .content_client_page .list_option .form-check .form-check-label{
+    margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 575px) {
+    .client_page .content_client_page{
+        display: block;
+    }
+    .client_page .content_client_page .item{
+        width: 100%;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .client_page .content_client_page .buttons_client a.btn,
+    .client_page .content_client_page .buttons_client button.btn{
+        font-size: 11px;
+        padding: 1.15rem 1.75rem 1.15rem 3.75rem ;
+        margin-right: 0 !important;
+    }
+}
