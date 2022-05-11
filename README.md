@@ -31,4 +31,5 @@ and then
 `ng test`
   
   
- # Arrange, Act, Assert (AAA)
+# Arrange, Act, Assert (AAA)
+The test is a story, it should be clear and easy to read.
