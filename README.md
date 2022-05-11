@@ -29,3 +29,6 @@ It’s important — all tests should be stored in files with name format <name-
 and then
 
 `ng test`
+  
+  
+ # Arrange, Act, Assert (AAA)
