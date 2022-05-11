@@ -15,6 +15,9 @@ It can be a class, or method, with mocked dependencies. We will use this type of
 #### Integration testing — Few classes testing integrated.
 For example, for the back-end, it can be service and repository testing together, or service and component testing for the front-end.
 
+#### End to end testing — full application testing
+From front-end to back-end, that’s why it is called a (front) end to (back) end testing. In these tests usually live services using and nothing is mocked. it fully reproduces the real application work.
+
 ## Test tools — Karma and Jasmine
 For automated tests on the front-end with Angular often uses built-in tools Karma and jasmine. Karma is a test runner, the tool which runs our tests in the browser. Jasmine — test tool for creating mocks and assert test results. You can use different tools for testing, such as Jest, Mocha, Chai, etc., but Jasmine already here out of the box and sufficient for most cases.
 
