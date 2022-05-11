@@ -8,8 +8,12 @@ By the command npm test. Your project will be compiled and run Karma for running
 
 ### Types of automated tests.
 There are 3 main types of automated tests. There are no strict borders between them and it can be arguably hard to decide which test falls in which category.
-####Unit testing - test of one “unit” of code. 
+
+#### Unit testing - test of one “unit” of code. 
 It can be a class, or method, with mocked dependencies. We will use this type of test here.
+
+#### Integration testing — Few classes testing integrated.
+For example, for the back-end, it can be service and repository testing together, or service and component testing for the front-end.
 
 ## Test tools — Karma and Jasmine
 For automated tests on the front-end with Angular often uses built-in tools Karma and jasmine. Karma is a test runner, the tool which runs our tests in the browser. Jasmine — test tool for creating mocks and assert test results. You can use different tools for testing, such as Jest, Mocha, Chai, etc., but Jasmine already here out of the box and sufficient for most cases.
