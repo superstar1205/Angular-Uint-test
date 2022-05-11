@@ -35,5 +35,9 @@ and then
 The test is a story, it should be clear and easy to read.
 
  Arrange — set the initial state of the system under test.
+  
  Act — call a method that you want to test.
+  
  Assert — Analyze the result and ensure that it equal to the desired result.
+
+ Jasmine has a special function, called expect.
