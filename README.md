@@ -41,3 +41,9 @@ The test is a story, it should be clear and easy to read.
  Assert — Analyze the result and ensure that it equal to the desired result.
 
  Jasmine has a special function, called expect.
+ 
+ ## Contact Link
+
+[telegram] (https://t.me/ProDev1205)
+
+[Skype] (https://join.skype.com/invite/xAHPnMKaZkkk)
